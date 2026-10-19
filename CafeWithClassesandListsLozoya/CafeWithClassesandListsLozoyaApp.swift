@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
+import SwiftData
 @main
 struct CafeWithClassesandListsLozoyaApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: ItemStruct.self)
         }
     }
 }
